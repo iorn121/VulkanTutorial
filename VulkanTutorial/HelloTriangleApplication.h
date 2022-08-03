@@ -7,6 +7,8 @@
 #include <stdexcept>
 #include <functional>
 
+
+
 class HelloTriangleApplication
 {
 public:
@@ -19,6 +21,8 @@ public:
 		cleanup();
 	}
 private:
+	VkInstance instance;
+	void createInstance();
 	void initWindow();
 	void initVulkan();
 	void mainLoop();
